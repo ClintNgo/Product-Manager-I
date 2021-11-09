@@ -14,9 +14,9 @@ const Product = (props) => {
     
     return (
         <div>
-            <p>{product.Title}</p>            
-            <p>{product.Price}</p>            
-            <p>{product.Description}</p>
+            <h1>{product.Title}</h1>            
+            <p>Price: ${product.Price}</p>            
+            <p>Description: {product.Description}</p>
         </div>
     )
 }
