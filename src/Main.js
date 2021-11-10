@@ -12,6 +12,9 @@ const Main= (props) => {
             .then(res=>setProduct(res.data))
             .catch(err=>console.log('Error', err))
     })
+    const removeFromDom = (id) => {
+        setProduct(product.filter(product => product._id != id));
+    }
     return (
         <div>
             <h2>{message}</h2>

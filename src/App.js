@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Main from './Main.js';
 import Product from './Product.js';
+import Update from './Update.js'
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           </Route>
           <Route exact path='/product/:id'>
             <Product></Product>
+          </Route>
+          <Route path="/product/edit/:id">
+            <Update></Update>
           </Route>
         </Switch>
       </BrowserRouter>
